@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 class BookList extends Component {
   render() {
 
-    let bookContent = this.props.users.map((book) => {
+    let bookList = this.props.books.map((book) => {
       return(
         <li
           key={book.id}
@@ -32,7 +32,7 @@ class BookList extends Component {
 
     return (
       <ul className="list-group col-sm-4">
-      {bookContent}
+      {bookList}
         {/* return your mapped array list items here */}
       </ul>
     );
